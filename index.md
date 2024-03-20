@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<img src="KSULogo.jpg" alt="Kennesaw State University Logo" />
+<img src="assets/images/KSULogo.png" alt="Kennesaw State University Logo" />
 
 # Header 1
 
+[Project](./another-page.html).
+
 ## Contact
-[Link to another page](./another-page.html).
