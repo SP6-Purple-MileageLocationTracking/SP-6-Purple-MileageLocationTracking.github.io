@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img src="KSU Mountain Logo.png" />
+<img src="KSULogo.jpg" alt="Kennesaw State University Logo" />
 
 # Header 1
 
