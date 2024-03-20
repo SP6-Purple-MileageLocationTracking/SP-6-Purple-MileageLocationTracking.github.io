@@ -7,13 +7,16 @@ layout: default
 # Overview
 
 ## Documentation
-[Project Plan](./project-plan.html)
+
+* [Project Plan](./project-plan.html)
+
 <br>
-[Project Requirements & Design](./project-requirements-design.html)
+
+* [Project Requirements & Design](./project-requirements-design.html)
 
 ## Contact
 | Name          | E-mail                      | Phone #      |
-|:--------------|:----------------------------|:-------------|
+|---------------|-----------------------------|--------------|
 | Mason Sherrill| <mason0015s@gmail.com>      | 423-414-1218 |
 | Zach Morning  | <zchry.mrngg@gmail.com>     | 678-879-2195 |
 | Alex Nguyen   | <alexnguyen02@outlook.com>  | 770-862-7410 |
