@@ -2,8 +2,6 @@
 layout: default
 ---
 
-## Project
-
-_yay_
+## Project Plan
 
 [back](./)

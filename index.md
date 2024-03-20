@@ -6,6 +6,8 @@ layout: default
 
 # Header 1
 
-[Project](./another-page.html).
+## Documentation
+[Project Plan](./project-plan.html)
+[Project Requirements & Design](./project-requirements-design.html)
 
 ## Contact
