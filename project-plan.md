@@ -42,6 +42,6 @@ Collaboration     	—	Discord
 
 ## Version Control Plan: 
 We will be using GitHub as our main source of version control.  The group GitHub can be found here: 
-<a href="{{ site.github.owner_url }}">
+<a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
 
 [Back](./)
