@@ -16,8 +16,8 @@ layout: default
 
 | Name           | E-mail Address              | Phone #      
 |:---------------|:----------------------------|:-------------
-| <img src="assets/images/Mason.png" alt="Mason Sherrill" />Mason Sherrill | <mason0015s@gmail.com>      | 423-414-1218 
-| <img src="assets/images/Zach.png" alt="Zach Morning" />Zach Morning   | <zchry.mrngg@gmail.com>     | 678-879-2195 
-| <img src="assets/images/Alex.png" alt="Alex Nguyen" />Alex Nguyen    | <alexnguyen02@outlook.com>  | 770-862-7410 
-| <img src="assets/images/Brian.png" alt="Brian Nghiem" />Brian Nghiem   | <brian.nghiem06@gmail.com>  | 678-216-9379 
-| <img src="assets/images/Shaun.png" alt="Shaun Teague" />Shaun Teague   | <shaunteague06@outlook.com> | 207-352-8811 
+| <img src="assets/images/Mason.png" alt="Mason Sherrill" width="500" height="250"/> Mason Sherrill | <mason0015s@gmail.com>      | 423-414-1218 
+| <img src="assets/images/Zach.png" alt="Zach Morning" width="500" height="250"/> Zach Morning   | <zchry.mrngg@gmail.com>     | 678-879-2195 
+| <img src="assets/images/Alex.png" alt="Alex Nguyen" width="500" height="250"/> Alex Nguyen    | <alexnguyen02@outlook.com>  | 770-862-7410 
+| <img src="assets/images/Brian.png" alt="Brian Nghiem" width="500" height="250"/> Brian Nghiem   | <brian.nghiem06@gmail.com>  | 678-216-9379 
+| <img src="assets/images/Shaun.png" alt="Shaun Teague" width="500" height="250"/> Shaun Teague   | <shaunteague06@outlook.com> | 207-352-8811 
