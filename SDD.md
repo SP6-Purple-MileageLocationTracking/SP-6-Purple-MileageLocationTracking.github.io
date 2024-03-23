@@ -2,108 +2,150 @@
 layout: default
 ---
 
-## Software Design Document
+# Software Design Document
 
-# SP – 6 Purple — Mileage/Location Tracking App 
-# Software Requirements Specification (SRS) 
-# CS 4850 – Section 01 – Spring 2024 
-# February 13, 2024 
+## 1.0 Introduction 
 
-## Introduction 
+The Software Design Document (SDD) is a crucial component in the software development lifecycle that helps guide the implementation process. The Software Design Document for the Mileage/Location Tracking application serves as a comprehensive guide outlining the functional and non-functional requirements, design considerations, architecture, and the implementation details of the software system being developed. The purpose of this document is to provide a clear understanding of the design principles, components and architecture within the system. The SDS describes design goals, considerations, and development methods, provides an overview of the architectural strategies as well as the systems architectures, and describes high-level detail about the systems design.  
 
-The Software Requirements Specification document is broken up into different sections that will highlight the overall design and importance of our Mileage/Location Tracking application. In this section, the introduction, it details the purpose and goals of the application, as well as the possible assumptions or factors that could affect its development. It also lists important acronyms and their definitions that could be found throughout the document. In the second section, design constraints, it explains possible limitations or restrictions that the application may possess during the development process. In the third and fourth section, functional requirements and non-functional requirements, describes certain features and functionalities that should be present within the application. The fifth section, the external interface requirements, provides information to ensure that the system will communicate properly with users and with external hardware or software elements. 
+### 1.1 Document Outline 
+Here is the outline of the Software Design Document, listing each section and their respective subsections. 
 
-### 1.1 Overview 
+- Introduction 
+    - Document Description 
+        - Introduction 
+            - Purpose 
+            - Scope: Project Goals  
+            - Definitions 
+        - System Overview 
+            - Functionality and Design 
+- Design Considerations 
+    - Assumptions and Dependencies & General Constraints 
+        - Assumptions and Dependencies 
+        - General Constraints 
+    -  Goals and Guidelines & Development Methods  
+        - KISS Principles 
+        - Agile Method 
+        - Priority on Intuitive Records 
+- Architectural Strategies 
+    - Strategy – Agile Method 
+- System Architecture 
+    - Component – React Native 
+    - Component – Firebase 
+    - Component – Google Maps APIs 
+- Detailed System Design 
+    - Module - React Native 
+    - Module - Firebase 
+    - Module - Google Maps APIs 
+- Bibliography  
 
-All businesses require records of their mileage and time spent any time they travel to an offsite location. With our Mileage/Location Tracking mobile app, any employee can track the miles they travel for business record purposes.  
+### 1.2 Document Description 
 
-Our app will allow the user to have their starting and ending location tracked as well as the distance they travel. To determine those factors, we will utilize Google Maps APIs. Thus, they will be able to accurately record their mileage as well as time spent traveling. Additionally, the app will create easily digested weekly reports on total miles traveled and total time spent within that week. We conclude that this mobile app will be used by small business employees and owners for the sake of keeping records regarding mileage. 
+The Software Design Document is broken up into different sections that will highlight the overall design and importance of our Mileage/Location Tracking application. In this section, the introduction, it details the purpose and scope of the document, as well as a lists important acronyms and their definitions that can be found throughout the document. In the second section, design considerations, it explains possible limitations or restrictions that the application may possess during the development process. In the third, the architectural strategies and system architecture, it details using the Agile method for our software development and the implementation of react native, firebase, and google maps APIs for our system architecture. The fourth section, detailed system designs, provides information on the primary components that will be used to implement our design. 
 
-Mobile app Mileage/Location Tracking app development using React Native, JavaScript and Firebase. 
+#### 1.2.1 Introduction 
 
-React Native is an open-source UI software framework created by Meta Platforms, Inc. It allows the development of iOS/Android apps and uses JavaScript as the programming language. React Native also allows the UI of the IOS and Android apps to be platform specific allowing for a native feel to the app on each platform. JavaScript is an Open-Source, client-side programming language. It is easy to learn, stable, and creates high-performance applications. Firebase is a set of backend cloud computing services and application development platforms provided by Google. It hosts databases, services, authentication, and integration for a variety of applications, including Android, iOS, and JavaScript. 
+##### 1.2.1.1 Purpose 
 
-### 1.2 Project Goals 
+The purpose of the Software Design Document is to provide a clear understanding of the design principles, components and architecture within the system. This document acts as a guide for the reader to easily follow and understand the design of our application. It provides a clear layout of how the system should be implemented and possible elements that should be kept in mind while developing the application, while ensuring consistency and coherence in the development process. The SDS also serves as a way of communication. Overall, this document ensures the successful development, implementation, and maintenance of the software systems by providing a detailed and structured overview of the systems design and requirements, as well as aligning everyone involved in the project. 
 
-Integrate Google Maps APIs that tracks starting and ending locations, miles traveled, and time spent while traveling 
+##### 1.2.1.2 Scope: Project Goals 
 
-Design a functional, user friendly, and readable user interface 
+All businesses require records of their mileage and time spent any time they travel to an offsite location. With our Mileage/Location Tracking mobile app, any employee can track the miles they travel for business record purposes. Our app will allow the user to have their starting and ending location tracked as well as the distance they travel. To determine those factors, we will utilize Google Maps APIs. Thus, they will be able to accurately record their mileage and time spent traveling. Additionally, the app will create easily digested weekly reports on total miles traveled and total time spent within that week. We conclude that this mobile app will be used by small business employees and owners for the sake of keeping records regarding mileage. 
 
-Design a database using Firebase 
+Project Goals: 
 
-Design a method to monetize the application through an advertisement system 
+* Integrate Google Maps APIs that tracks starting and ending locations, miles traveled, and time spent while traveling 
+* Design a functional, user friendly, and readable user interface 
+* Design a database using Firebase 
+* Design a method to monetize the application through an advertisement system	 
 
-### 1.3 Definitions and Acronyms 
+##### 1.2.1.3 Definitions 
 
 | Acronym      | Definition            
 |:-------------|:-----
 |API| Application Programming Interface     
 |GPS| Global Positioning System   
-|IOS| iPhone Operating System 
+|KISS| Keep It Simple, Stupid
+|OS| Operating System
+|SQL| Structured Query Language
 |UI| User Interface
+|UX| User Experience
 
-### 1.4 Assumptions 
+#### 1.2.2 System Overview 
 
-Using Google Maps APIs or other third-party components may cause issues pinpointing accurate locations and calculations 
+##### 1.2.2.1 Functionality  
 
-Using React Native allows different features for different platforms. When developing, certain features may cause issues on one platform and not the other 
+The app will allow the user to have their starting and ending location tracked as well as the distance they travel. To determine those factors, we will utilize Google Maps APIs. Thus, they will be able to accurately record their mileage and time spent traveling. It will also account for general constraints such as, lack of wireless network connection, potential authentication requirements, data protection and privacy, and local storage capabilities. Additionally, the app will create easily digested weekly reports on total miles traveled and total time spent within that week. 
 
-Internet connectivity may cause GPS tracking to stop altogether if the user is offline. Thus, calculating and receiving traveling data may be incorrect. Another issue is, internet connection is needed to upload and download information to the database, without proper connection that information could be lost or incorrect. 
+#### 1.2.2.2 Design 
 
-## 2.0 Design Constraints 
+During the development process, we will follow the KISS principle to create a simple and interactive user interface that is user friendly, readable and easy to navigate. The architectural strategy that will be employed is the Agile method. As for the system architecture, the three main components that will be implemented to develop the software are React Native, Firebase, and Google Maps APIs. 
 
-While our project will not have many design constraints, certain limitations should be considered.  The first is react native. React native will allow us to code an app for both iPhone and Android with one framework.  This is possible due to react native having components that take advantage of the corresponding native features found on the Apple platform and the Android platform (which is why it is called react native).  However, when developing, there may be certain features that are exclusive to one platform that are not on the other platform.  If an issue like this comes up during development, we must keep in mind possible alternative methods of implementation that can work on both platforms. 
+## 2 Design Considerations 
 
-Another possible limitation is internet connectivity.  While geolocation should be possible using the built in GPS chip of the phone, an internet connection is still needed for the app to upload and download information to the database.  This may be an issue if the driver is in a location with a bad cellular connection.  While this is not ideal, there are several solutions to take on this problem such as having the driver's app only upload information to the database while in a place with a good cellular or Wi-Fi connection. 
+This section describes many of the issues which need to be addressed or resolved before attempting to devise a complete design solution. 
 
-## 3.0 Functional Requirements 
+### 2.1 Assumptions, Dependencies & General Constraints 
 
-Login and Password 
+#### 2.1.1 Assumptions and Dependencies 
 
-Authentication 
+There are multiple dependencies that are required for this software to work, including: 
 
-### 3.1 Track Start and End of Trip 
-The app should be able to detect when a trip begins and when a trip ends. This is necessary for the calculation of mileage and time spent on any given trip. The app will use Google Maps API to determine this based on speed traveled. 
-High Priority 
+* Android OS 13 or Later 
+* iOS 16 or Later 
+* GPS Compatible Device. 
+* Wireless Network Capable Device. 
+With these dependencies, this provides us with the very essentials for our software to perform its basic functions. 
 
-### 3.2 Weekly Reports 
-The app will report your total miles traveled and total time spent on a weekly basis. This information will be stored in a database for the sake of the business’ security and safekeeping as well as to revisit data as needed. 
-High Priority 
+#### 2.1.2 General Constraints 
 
-### 3.3 Trip Continuity when Offline 
-The app should be able to understand that a driver may lose internet connection while driving so the trip should still be tracked even when offline. The app will use the Google Maps API and recognize that a driver is still moving or has moved at high speed between two points when already driving. 
-High Priority 
+General constraints for this software mainly involve the user’s device, and the constraints that arise therein. Our general constraints are as follows: 
 
-### 3.4 Home Page Navigates to In Progress Week and Day Report 
-The app will have pages that will have the current days and week’s report in progress and be navigable by the user from the homepage.  
-Medium Priority 
+* Lack of a Wireless Network Connection. 
+* Potential Authentication Requirements based on Customer Needs. 
+* General Standards of Data Protection and Privacy, as we will be tracking users' location data. 
+* Local Storage Capability and Availability before Storing Data to Cloud. 
 
-## 4.0 Non-Functional Requirements 
+### 2.0 Goals and Guidelines & Development Methods 
 
-### 4.1 Security 
+#### 2.2.1 KISS principle 
 
-Security is a paramount non-functional requirement for the app. The system will implement robust measures to safeguard user data, ensuring confidentiality, integrity, and availability. User authentication and authorization will be handled securely, with Firebase Authentication used to manage user access. Additionally, data transmission between the mobile app and Firebase will be encrypted by Firebase to prevent unauthorized access. Access controls will be implemented at both the user and administrator levels, ensuring that only authorized personnel can access sensitive information and reports. 
+Our app will strive to create a simple and interactive UI that is intuitive and easy to navigate. Small business owners are, typically, busy people without the time to train themselves in fields that are not related to their business. Therefore, we want small business owners to have the ability to use our app without the need for training or any specialty in technology.	 
 
-### 4.2 Capacity 
+#### 2.2.2 Agile Method 
 
-Capacity requirements are crucial to ensure the app can handle a scalable number of users and data. The backend infrastructure, powered by Firebase, will be capable of scaling dynamically to accommodate an increasing number of users and their respective data entries. The app will be designed to handle potential peaks in user activity, particularly during periods of heavy usage. Firebase Cloud Functions are optimized for efficient execution, and the database will be able to handle a growing volume of location and mileage data. Regular performance testing will be conducted to identify and address any bottlenecks in the system, ensuring optimal performance under various usage scenarios. 
+During our development process, we will be using the agile method. More particularly, we will be using the aspect of the process that allows for frequent deliveries as well as change being available throughout the entire process. 
 
-### 4.3 Usability 
+#### 2.2.3 Priority on Intuitive Records 
 
-The React Native-based frontend will adhere to design principles that prioritize user-friendly navigation, clear layouts, and easy data input. The app will feature responsive design elements to cater to various device sizes and orientations. User interfaces for tracking data and report generation should be straightforward and well-documented. Usability testing will be conducted to gather feedback and iteratively improve the app's overall usability. 
+Our app will prioritize clear and concise records that will be stored in the database. This is so that there will not be much time searching through records when retrieving them. This is important to us due to our main audience being small business owners, thus our priority is to cater to the audience who has less time to search through their records. 	 
 
-### 4.4 Other 
+## 3.0 Architectural Strategies & System Architecture 
 
-The app will prioritize maintainability, ensuring that code is well-documented, modular, and follows good coding standards. Regular backups of user data will be performed to prevent data loss. The app will have offline capabilities for data to save to the device, allowing users data to be saved even when there is no internet connection, with automatic synchronization once connectivity is restored. Load balancing mechanisms should be implemented to distribute traffic evenly across server resources. Regular monitoring and logging should be in place to track system performance, identify issues, and enable proactive maintenance. 
+### 3.1 Architectural Strategies 
 
-## 5.0 External Interface Requirements 
+While there are many strategies for designing software in a team environment such as the waterfall and spiral methods, our team has decided to employ the Agile method of software development.  We have chosen this method for two main reasons.  The first is that Agile usually is mainly focused on smaller teams and shorter development times (Agile Manifesto).  The second is that agile is commonly used throughout the entire industry (Agile Manifesto).  This means that any experience using this method for our project should give us insight and experience for real-world development lifecycles. 
 
-### 5.1 Hardware Interface Requirements 
+### 3.2 System Architecture 
 
-Regarding hardware requirements, users must have a standard issue Apple iOS or Android OS capable phone. User’s devices must have wireless internet capability, either via SIM cards providing cellular connectivity or via WiFi. User’s devices must also have built in GPS and Gyroscopic capabilities (this is generally in built into a majority of consumer smartphones and tablets) 
+There are three main components that we will be using for our system architecture.  The first is React Native.  React Native will give us the tools to create a UI for our app that will work on both the iPhone and android platforms.  The second of these components is Firebase.  Firebase is a no SQL database that will allow us to store app information on the cloud.  This will be useful for storing reports for the admin to see and storing the driver's locations.  Lastly, there is the Google Maps API.  This will allow us to use some of the features of Google Maps in our app such as geolocation.  By using these features, we can track the location of the drivers to get a better idea of how far they have traveled for gas milage calculations.   
 
-### 5.2 Software Interface Requirements 
+## 4.0 Detailed System Design 
 
-It is recommended that user’s devices have up-to-date firmware and software images on devices using this app. With the ever-changing nature of technology, we ask that  
+### 4.1 React Native 
+    React Native will serve as the primary user interface component for our mobile app. Specifically designed to create a consistent and intuitive user experience, React Native components will be organized to fulfill requirements outlined in the specifications. The primary responsibility of these components is to render various screens, capture user input, and facilitate smooth navigation within the app. Assumptions include adherence to the specified design guidelines and constraints on UI/UX. Subcomponents will encompass individual screens, navigation elements, and UI elements like buttons and forms. Collaborations involve interaction with Firebase for data retrieval and storage and interaction with Google Maps API for presenting map views. React Native manages resources such as memory for rendering UI components and interacts with device APIs for basic native functionalities. 
+
+### 4.2 Firebase 
+
+    Firebase will play a crucial role in managing the backend data storage and authentication processes of the app. The primary responsibility includes real-time data synchronization, user authentication, and cloud functions for server-side logic execution. Assumptions involve secure data transmission and adherence to Firebase's data structure constraints. Subcomponents encompass Firestore for data storage, Firebase Authentication for user management, and Cloud Functions for server-side logic. Collaborations include interactions with React Native for data presentation, data storage, and user authentication. Firebase manages resources such as server space for data storage and processing power for cloud functions. 
+
+### 4.3Google API 
+
+    Google Maps API will be integrated to handle mapping and geolocation functionalities within the app. The primary responsibility includes rendering maps, tracking locations, and providing accurate mileage data. Assumptions involve reliable internet connectivity for map rendering. Subcomponents include map rendering, geocoding, and reverse geocoding elements. Collaborations encompass interactions with React Native for presenting map views and Firebase for storing location data. Google Maps API manages resources like map tiles, geolocation services, and rendering capabilities. The API uses algorithms for efficient map rendering, geocoding, and reverse geocoding, with considerations for handling exceptional conditions like invalid coordinates. 
+
+## Bibliography 
+The Four Values of the Agile Manifesto 
+https://www.productboard.com/glossary/agile-values/ 
 
 [back](./)
