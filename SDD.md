@@ -5,6 +5,7 @@ layout: default
 
 # Software Design Document
 
+
 ## **1.0 Introduction**
 
 The Software Design Document (SDD) is a crucial component in the software development lifecycle that helps guide the implementation process. The Software Design Document for the Mileage/Location Tracking application serves as a comprehensive guide outlining the functional and non-functional requirements, design considerations, architecture, and the implementation details of the software system being developed. The purpose of this document is to provide a clear understanding of the design principles, components and architecture within the system. The SDS describes design goals, considerations, and development methods, provides an overview of the architectural strategies as well as the systems architectures, and describes high-level detail about the systems design.  
@@ -84,6 +85,7 @@ The app will allow the user to have their starting and ending location tracked a
 
 During the development process, we will follow the KISS principle to create a simple and interactive user interface that is user friendly, readable and easy to navigate. The architectural strategy that will be employed is the Agile method. As for the system architecture, the three main components that will be implemented to develop the software are React Native, Firebase, and Google Maps APIs. 
 
+
 ## **2.0 Design Considerations** 
 
 This section describes many of the issues which need to be addressed or resolved before attempting to devise a complete design solution. 
@@ -121,6 +123,7 @@ During our development process, we will be using the agile method. More particul
 
 Our app will prioritize clear and concise records that will be stored in the database. This is so that there will not be much time searching through records when retrieving them. This is important to us due to our main audience being small business owners, thus our priority is to cater to the audience who has less time to search through their records. 	 
 
+
 ## **3.0 Architectural Strategies & System Architecture** 
 
 ### **3.1 Architectural Strategies** 
@@ -143,6 +146,7 @@ React Native will serve as the primary user interface component for our mobile a
 ### **4.3 Google API** 
 
 Google Maps API will be integrated to handle mapping and geolocation functionalities within the app. The primary responsibility includes rendering maps, tracking locations, and providing accurate mileage data. Assumptions involve reliable internet connectivity for map rendering. Subcomponents include map rendering, geocoding, and reverse geocoding elements. Collaborations encompass interactions with React Native for presenting map views and Firebase for storing location data. Google Maps API manages resources like map tiles, geolocation services, and rendering capabilities. The API uses algorithms for efficient map rendering, geocoding, and reverse geocoding, with considerations for handling exceptional conditions like invalid coordinates. 
+
 
 ## **Bibliography** 
 [The Four Values of the Agile Manifesto](https://www.productboard.com/glossary/agile-values/)
