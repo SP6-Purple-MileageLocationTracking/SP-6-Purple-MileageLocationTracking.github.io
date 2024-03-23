@@ -68,7 +68,7 @@ High Priority
 The app should be able to understand that a driver may lose internet connection while driving so the trip should still be tracked even when offline. The app will use the Google Maps API and recognize that a driver is still moving or has moved at high speed between two points when already driving. 
 High Priority 
 
-### **3.4 Home Page Navigates to In Progress Week and Day Report **
+### **3.4 Home Page Navigates to In Progress Week and Day Report**
 The app will have pages that will have the current days and week’s report in progress and be navigable by the user from the homepage.  
 Medium Priority 
 
