@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img src="assets/images/KSULogo.png" alt="Kennesaw State University Logo" width ="700" height="200"/>
+<img src="assets/images/KSULogo.png" alt="Kennesaw State University Logo" width ="700" height="200"/> CS 4850 <br> Spring Semester 2024
 
 ## Documentation
 

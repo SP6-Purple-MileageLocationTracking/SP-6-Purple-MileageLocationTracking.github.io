@@ -338,11 +338,6 @@ nav {
 
       &:hover { color: #999; }
     }
-
-    // .active {
-    //   border-right:solid 4px #39C;
-    //   padding-right:13px;
-    // }
   }
 }
 
@@ -360,7 +355,7 @@ footer {
 
   div.wrapper {
     width:auto;
-    margin:100px;
+    margin:0;
   }
 
   nav{
@@ -457,7 +452,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 900px) {
+@media print, screen and (max-width: 1000px) {
   body {
   }
 
@@ -505,7 +500,7 @@ footer {
   }
 }
 
-@media print, screen and (max-height: 300px) {
+@media print, screen and (max-height: 480px) {
   nav {
     display: none;
   }
