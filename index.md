@@ -1,5 +1,6 @@
 ---
 layout: default
+classoption: landscape
 ---
 
 <img src="assets/images/KSULogo.png" alt="Kennesaw State University Logo" />
