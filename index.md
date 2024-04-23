@@ -14,7 +14,7 @@ layout: default
 
 ## Contact
 
-|<img src="assets/images/Mason.png" alt="Mason Sherrill" width="200" height="175"/> | <img src="assets/images/Zach.png" alt="Zach Morning" width="200" height="175"/> | <img src="assets/images/Alex.png" alt="Alex Nguyen" width="200" height="175"/> | <img src="assets/images/Brian.png" alt="Brian Nghiem" width="200" height="175"/> | <img src="assets/images/Shaun.png" alt="Shaun Teague" width="200" height="175"/>   
+|<img src="assets/images/Mason.png" alt="Mason Sherrill" width="175" height="175"/> | <img src="assets/images/Zach.png" alt="Zach Morning" width="175" height="175"/> | <img src="assets/images/Alex.png" alt="Alex Nguyen" width="175" height="175"/> | <img src="assets/images/Brian.png" alt="Brian Nghiem" width="175" height="175"/> | <img src="assets/images/Shaun.png" alt="Shaun Teague" width="175" height="175"/>   
 |:---------------:|:----------------------------:|:---:|:---:|:---:
 |Mason Sherrill <br> <mason0015s@gmail.com> <br>  423-414-1218| Zach Morning <br> <zchry.mrngg@gmail.com> <br> 678-879-2195|Alex Nguyen  <br> <alexnguyen02@outlook.com> <br> 770-862-7410 |Brian Nghiem <br> <brian.nghiem06@gmail.com> <br> 678-216-9379|Shaun Teague <br> <shaunteague06@outlook.com> <br> 207-352-8811
 
