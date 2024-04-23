@@ -505,7 +505,7 @@ footer {
   }
 }
 
-@media print, screen and (max-height: 480px) {
+@media print, screen and (max-height: 300px) {
   nav {
     display: none;
   }
