@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<img src="assets/images/KSULogo.png" alt="Kennesaw State University Logo" width ="700" height="200"/> &emsp;&emsp;&emsp; CS 4850 &emsp;&emsp;&emsp; Spring Semester 2024
+<img src="assets/images/KSULogo.png" alt="Kennesaw State University Logo" width ="500" height="100"/> &emsp;&emsp;&emsp; CS 4850 &emsp;&emsp;&emsp; Spring Semester 2024
 
-All businesses require records of their mileage and time spent any time they travel to an offsite location. With our Mileage/Location Tracking mobile app, any employee can track the miles they travel for business record purposes.  
-Our app will allow the user to have their starting and ending location tracked as well as the distance they travel. To determine those factors, we will utilize Google Maps APIs. Thus, they will be able to accurately record their mileage as well as time spent traveling. Additionally, the app will create easily digested weekly reports on total miles traveled and total time spent within that week. We conclude that this mobile app will be used by small business employees and owners for the sake of keeping records regarding mileage.
+## Overview
+&emsp;&emsp;All businesses require records of their mileage and time spent any time they travel to an offsite location. With our Mileage/Location Tracking mobile app, any employee can track the miles they travel for business record purposes. Our app will allow the user to have their starting and ending location tracked as well as the distance they travel. To determine those factors, we will utilize Google Maps APIs. Thus, they will be able to accurately record their mileage as well as time spent traveling. Additionally, the app will create easily digested weekly reports on total miles traveled and total time spent within that week. We conclude that this mobile app will be used by small business employees and owners for the sake of keeping records regarding mileage.
 
 
 
