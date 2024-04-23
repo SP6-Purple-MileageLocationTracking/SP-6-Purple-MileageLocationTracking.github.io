@@ -365,7 +365,7 @@ footer {
   line-height: 16px;
 }
 
-@media print, screen and (max-width: 1600px) {
+@media print, screen and (max-width: 1060px) {
 
   div.wrapper {
     width:auto;
@@ -408,7 +408,7 @@ footer {
     border-width:1px 0;
     padding:20px 0;
     margin: 190px auto 20px;
-    max-width: 1600px;
+    max-width: 600px;
   }
 
   footer{
@@ -421,7 +421,7 @@ footer {
     }
 }
 
-@media print, screen and (max-width: 1600px) {
+@media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
   }
@@ -466,7 +466,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 1600px) {
+@media print, screen and (max-width: 480px) {
   body {
   }
 
