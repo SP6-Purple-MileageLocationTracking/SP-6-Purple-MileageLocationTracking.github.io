@@ -1,3 +1,10 @@
 title: Sp-6-Purple-Mileage/Location Tracking
 google_analytics:
 theme: jekyll-theme-leap-day
+header-includes:
+- |
+  ```{=latex}
+  \usepackage{pdflscape}
+  \newcommand{\blandscape}{\begin{landscape}}
+  \newcommand{\elandscape}{\end{landscape}}
+    ```
