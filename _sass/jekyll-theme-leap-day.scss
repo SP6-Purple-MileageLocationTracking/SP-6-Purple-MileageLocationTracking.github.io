@@ -298,7 +298,7 @@ nav {
   width: 200px;
   position: fixed;
   top: 220px;
-  left:20%;
+  left:50%;
   margin-left:-580px;
   text-align: right;
 
@@ -311,9 +311,6 @@ nav {
     li {
       padding: 5px 0px;
       line-height: 16px;
-      // padding-right:17px;
-      // position:relative;
-      // right:-12px;
 
       &.tag-h1 {
         font-size: 1.2em;
